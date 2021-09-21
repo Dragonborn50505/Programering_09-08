@@ -1,5 +1,71 @@
 ﻿using System;
 
+string currentRoom = "crossroads";
+
+string option = "";
+
+while (currentRoom != "gameover")
+{
+    if (currentRoom == "crossroads")
+    {
+        Console.WriteLine("Då är blöt och har gått i timmar du kommer fram till en vägkorsning. Du kan antingn gå höger eller vänster, vilken väg välger du?");
+        option = Console.ReadLine();
+        option = option.ToLower();
+      
+        if (option == "vänster")
+        {
+            currentRoom = "house";
+        }
+
+        else if (option == "höger")
+        {
+            currentRoom = "cave";
+        }
+
+
+
+
+
+    }
+    else if (currentRoom == "house")
+    {
+if (option == "knock")
+        {
+            currentRoom = "knock";
+        }
+
+        
+    }
+
+
+    else if (currentRoom == "cave")
+    {
+
+    }
+
+
+    else if (currentRoom == "knock")
+    {
+
+    }
+
+     else if (currentRoom == "fortästt")
+    {
+
+    }
+
+     else if (currentRoom == "Kill")
+    {
+
+    }
+
+
+    
+}
+
+
+
+
 Console.WriteLine("Då är blöt och har gått i timmar du kommer fram till en vägkorsning. Du kan antingn gå höger eller vänster, vilken väg välger du?");
 string choice = Console.ReadLine();
 
